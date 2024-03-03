@@ -1,0 +1,206 @@
+// ＝＝＝＝＝＝＝＝＝＝上方導覽列區塊
+.mainNavWrap {
+    background-color: $white;
+}
+
+.toolNav {
+    padding: 8px 20px;
+    background-color: $gray-100;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.grayLink {
+    color: $gray-700;
+}
+
+.menuNavWrap {
+    background-color: $gray-900;
+}
+
+.menuNav {
+    // background-color: $gray-900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include device-xs {
+        width: 1024px;
+        justify-content: flex-start;
+        overflow-x: scroll;
+    }
+
+    a {
+        display: block;
+        padding: 8px 20px;
+        color: $white;
+    }
+}
+
+// 重點按鈕
+.squareBtn {
+    border-radius: 4px;
+    padding: 4px 8px;
+    color: $white;
+
+    @include device-md {
+        font-size: 12px;
+        padding: 4px 6px;
+    }
+}
+
+.squareLgBtn {
+    border-radius: 4px;
+    padding: 12px 20px;
+    color: $white;
+
+    @include device-md {
+        padding: 8px 12px;
+    }
+
+    @include device-sm {
+        font-size: 14px;
+        padding: 4px 8px;
+    }
+}
+
+//主導覽區塊
+.mainNav {
+    padding: 8px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: block;
+    width: 200px;
+
+    @include device-md {
+        width: 120px;
+    }
+
+    @include device-sm {
+        width: 80px;
+    }
+}
+
+.searchInput {
+    width: 300px;
+    padding: 8px 12px;
+    border: solid .1px $gray-900;
+    border-radius: 8px;
+    background-color: #fff;
+    outline: none;
+
+    @include device-md {
+        width: 250px;
+    }
+
+    @include device-sm {
+        width: 180px;
+    }
+
+    @include device-xs {
+        width: 130px;
+    }
+}
+
+main {
+    margin-top: 161px;
+
+    @include device-md {
+        margin-top: 156px;
+    }
+
+    @include device-xs {
+        margin-top: 134px;
+    }
+}
+
+
+// ==========主圖廣告區
+.heroWrap {
+    display: flex;
+    justify-content: center;
+    height: 500px;
+
+    @include device-xxl {
+        height: auto;
+    }
+}
+
+.circleCardWrap {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+
+    @include device-xl {
+        flex-wrap: wrap;
+    }
+}
+
+.circleCard {
+    display: block;
+    width: 110px;
+    text-align: center;
+
+    @include device-xl {
+        width: 100px;
+    }
+
+    @include device-md {
+        width: 75px;
+        font-size: 14px;
+    }
+}
+
+.productLineWrap {
+    @include device-xl {
+        width: 100%;
+        overflow-x: scroll;
+        position: relative;
+    }
+}
+
+.productLineWrapUl {
+    display: flex;
+    padding: 20px 0;
+    justify-content: center;
+
+    @include device-xl {
+        justify-content: flex-start;
+    }
+
+}
+
+.bgTitle {
+    background-color: $gray-900;
+    color: #fff;
+    border-radius: 8px 8px 0 0;
+    padding: 8px 20px;
+    margin-bottom: 0;
+    font-size: 20px;
+
+}
+
+.productTitle {
+    font-size: 20px;
+}
+
+.productCard {
+    margin: 0px 8px;
+    display: block;
+    width: 150px;
+    cursor: pointer;
+
+    img {
+        border-radius: 10px;
+    }
+
+    h3 {
+        font-size: 14px;
+        color: $gray-900;
+    }
+}
