@@ -31061,16 +31061,16 @@ p {
   }
 }
 
-main {
+.mainTop {
   margin-top: 161px;
 }
 @media (max-width: 768px) {
-  main {
+  .mainTop {
     margin-top: 156px;
   }
 }
 @media (max-width: 375px) {
-  main {
+  .mainTop {
     margin-top: 134px;
   }
 }
